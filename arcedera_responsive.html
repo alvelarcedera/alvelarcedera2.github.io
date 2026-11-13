@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Nonsense | Campus News</title>
+<style>
+/* BASE CSS: MOBILE DESIGN. DO NOT MODIFY THIS SECTION. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #17242a; background: #f1f4f2; }
+.site-header { background: #07583d; color: white; padding: 22px 18px; text-align: center; }
+.kicker { color: #e9c65d; font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+.site-header h1 { font-family: Georgia, serif; font-size: 32px; margin: 6px 0; letter-spacing: -1px; }
+.site-header p { font-size: 12px; margin: 0; color: #d5e6dc; }
+.navbar { background: #e4bd4d; padding: 10px 14px; text-align: center; }
+.navbar a { display: block; padding: 7px; color: #173d2e; text-decoration: none; font-weight: bold; font-size: 12px; }
+.breaking { background: #143b2e; color: white; padding: 11px 16px; font-size: 12px; text-align: center; }
+.breaking strong { color: #f4d46f; }
+.page { width: 100%; padding: 16px; margin: 0 auto; }
+.section-label { font-size: 11px; color: #0c6847; font-weight: bold; letter-spacing: 1.4px; text-transform: uppercase; margin: 0 0 10px; }
+.featured, .story, .sidebar { background: white; border: 1px solid #dde5df; border-radius: 7px; overflow: hidden; }
+.featured { margin-bottom: 18px; }
+.featured-visual { min-height: 205px; background: linear-gradient(135deg, #0a6548, #133c32); color: white; display: flex; align-items: center; justify-content: center; padding: 20px; text-align: center; }
+.featured-visual .emoji { font-size: 75px; }
+.featured-copy { padding: 20px; }
+.tag { display: inline-block; background: #e8f4ed; color: #07613d; padding: 5px 8px; border-radius: 3px; font-size: 10px; font-weight: bold; text-transform: uppercase; }
+h2 { font-family: Georgia, serif; font-size: 27px; line-height: 1.12; margin: 12px 0; }
+.featured-copy p { color: #586760; font-size: 14px; line-height: 1.55; margin: 0 0 12px; }
+.byline { font-size: 11px; color: #718077; }
+.content-area { display: block; }
+.story-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.story { padding: 0 0 14px; }
+.story-art { height: 120px; display: flex; align-items: center; justify-content: center; font-size: 53px; background: #d9e9df; }
+.story:nth-child(2) .story-art { background: #f3e6b7; }
+.story:nth-child(3) .story-art { background: #dce8f1; }
+.story:nth-child(4) .story-art { background: #f0dfe1; }
+.story h3 { font-family: Georgia, serif; font-size: 18px; line-height: 1.22; margin: 10px 13px 7px; }
+.story p { font-size: 12px; line-height: 1.5; color: #65746d; margin: 0 13px; }
+.sidebar { display: none; padding: 18px; }
+.sidebar h3 { font-family: Georgia, serif; font-size: 20px; margin: 0 0 12px; }
+.trend { border-top: 1px solid #e5eae6; padding: 12px 0; font-size: 13px; line-height: 1.4; }
+.trend b { color: #0c6847; margin-right: 7px; }
+.quote { background: #fff5d8; border-left: 4px solid #dfb842; padding: 13px; margin-top: 15px; font-family: Georgia, serif; font-size: 15px; line-height: 1.4; }
+.site-footer { background: #07583d; color: #e2f0e8; text-align: center; font-size: 11px; padding: 22px 12px; margin-top: 24px; }
+
+/* TABLET: Complete this media query. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .navbar a {
+    display: inline-block;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .story-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* DESKTOP: Complete this media query. */
+@media (min-width: 1100px) {.page {
+    max-width: 1140px;
+  }
+
+  .content-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .story-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .featured-visual {
+    flex: 1;
+    min-height: auto;
+  }
+
+  .featured-copy {
+    flex: 1;
+
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="kicker">Independent-ish Campus Journalism</div>
+  <h1>THE DAILY NONSENSE</h1>
+  <p>Reporting the unbelievable, one suspicious headline at a time.</p>
+</header>
+<nav class="navbar"><a href="https://paraverse.feutech.edu.ph/web/output.html#top-story">Top Story</a><a href="https://paraverse.feutech.edu.ph/web/output.html#latest">Campus News</a><a href="https://paraverse.feutech.edu.ph/web/output.html#trending">Trending</a><a href="https://paraverse.feutech.edu.ph/web/output.html#footer">About Us</a></nav>
+<div class="breaking"><strong>BREAKING:</strong> Local student claims to have finished an assignment early. Investigation ongoing.</div>
+<main class="page">
+  <p class="section-label">The Big Story</p>
+  <article class="featured" id="top-story">
+    <div class="featured-visual"><span class="emoji" role="img" aria-label="Potato on a laptop">🥔💻</span></div>
+    <div class="featured-copy">
+      <span class="tag">World Exclusive</span>
+      <h2>Man Accidentally Joins Online Meeting With Potato Filter; Gets Promoted</h2>
+      <p>Colleagues praised his calm leadership despite his repeated attempts to turn himself into French fries. The filter remains employed.</p>
+      <div class="byline">By The Very Serious Newsroom · Definitely Real News</div>
+    </div>
+  </article>
+  <div class="content-area">
+    <section class="latest" id="latest">
+      <p class="section-label">Latest Campus Headlines</p>
+      <div class="story-grid">
+        <article class="story"><div class="story-art">🐈</div><h3>Cat Becomes Neighborhood Mayor After Promising Unlimited Naps</h3><p>Residents applaud the new policy requiring humans to open doors on demand.</p></article>
+        <article class="story"><div class="story-art">☕</div><h3>Coffee Shop Introduces Loyalty Card: Buy 10 Coffees, Get Anxiety Free</h3><p>Customers say the complimentary anxiety arrived after their second espresso.</p></article>
+        <article class="story"><div class="story-art">📱</div><h3>Man Searches for Phone Using Flashlight on His Phone</h3><p>Witnesses report he thanked himself when he finally found it.</p></article>
+        <article class="story"><div class="story-art">🐦</div><h3>Pigeon Refuses to Move From Sidewalk, Charges Pedestrians Toll</h3><p>Payment accepted exclusively in breadcrumbs. City officials are negotiating.</p></article>
+      </div>
+    </section>
+    <aside class="sidebar" id="trending">
+      <h3>Most Read Today</h3>
+      <div class="trend"><b>01</b> Web Design Professor Manuel B. Garcia Says “One Last CSS Fix”; Class Ages Three Years</div>
+      <div class="trend"><b>02</b> Local Dog Learns to Sit, Immediately Demands Management Position</div>
+      <div class="trend"><b>03</b> Student Opens 37 Tabs to Research How to Close Browser Tabs</div>
+      <div class="trend"><b>04</b> Breaking: Missing Sock Found Living a New Life Behind Washing Machine</div>
+      <div class="quote">“It worked on my computer.”<br><small>— Every developer, eventually</small></div>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer" id="footer">THE DAILY NONSENSE · All stories are fictional · Responsive Design Seatwork</footer>
+
+
+</body></html>

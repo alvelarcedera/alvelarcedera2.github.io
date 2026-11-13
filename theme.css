@@ -1,0 +1,31 @@
+:root { color-scheme: light; }
+:root.dark-mode {
+  color-scheme: dark;
+  --background: #121a16;
+  --surface: #1e2a23;
+  --text: #edf3ee;
+  --muted: #b9c7be;
+  --green: #9bd5b6;
+  --border: #45594b;
+}
+
+.dark-mode body > header { background: #183d2d; }
+.dark-mode nav a:hover, .dark-mode nav a[aria-current="page"] {
+  background: var(--surface);
+  color: var(--green);
+}
+#theme-toggle {
+  display: block;
+  margin: 18px auto 0;
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.4;
+  cursor: pointer;
+  max-width: 100%;
+}
+#theme-toggle:hover { text-decoration: underline; }
+#theme-toggle:focus-visible { outline: 3px solid #e8b96e; outline-offset: 4px; }
